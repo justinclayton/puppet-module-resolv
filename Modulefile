@@ -1,0 +1,8 @@
+name    'justinclayton-resolv'
+version '0.0.1'
+source 'http://github.com/justinclayton/puppet-module-resolv.git'
+author 'justinclayton'
+license 'MIT'
+summary 'Configures resolv.conf'
+description 'Configures resolv.conf'
+project_page 'http://github.com/justinclayton/puppet-module-resolv'

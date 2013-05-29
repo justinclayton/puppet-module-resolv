@@ -1,0 +1,9 @@
+## NOTICE: Do not hand-edit this file!  ##
+## It was deployed by Puppet Enterprise ##
+
+domain <%= domainname %>
+<% if has_variable?("searchpath") && !searchpath.empty? then %>search <%= searchpath.join(" ") %>
+<% end -%>
+<% nameservers.each do |ns| %>nameserver <%= ns %>
+<% end -%>
+options attempts:2
