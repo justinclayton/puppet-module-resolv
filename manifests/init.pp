@@ -1,7 +1,7 @@
 # this module sets up resolv.conf
 class resolv (
-  $domainname     = hiera('domainname', 'defaultdomain.com'),
-  $searchpath     = hiera('searchpath', ['defaultdomain.com', 'defaultdomain2.com']),
+  $domainname     = hiera('domainname', $::domain),
+  $searchpath     = hiera('searchpath', [$::domain]),
   $nameservers    = hiera('nameservers', ['8.8.8.8', '8.8.4.4'])
 ) {
 

@@ -2,10 +2,16 @@ require 'spec_helper'
 
 describe 'resolv', :type => :class do
 
+  let :facts do
+    {
+      :domain => 'defaultdomain.com'
+    }
+  end
+
   context 'using default values' do
     it do
       should contain_file('/etc/resolv.conf')
-        .with_content(/search defaultdomain.com defaultdomain2.com/)
+        .with_content(/search defaultdomain.com/)
         .with_content(/domain defaultdomain.com/)
         .with_content(/nameserver 8.8.8.8/)
         .with_content(/nameserver 8.8.4.4/)
