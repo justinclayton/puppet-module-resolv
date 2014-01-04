@@ -1,0 +1,4 @@
+.bundle
+.rspec_system
+pkg/
+spec/fixtures
