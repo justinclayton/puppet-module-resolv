@@ -1,5 +1,5 @@
 name    'justinclayton-resolv'
-version '1.0.0'
+version '1.0.1'
 source 'http://github.com/justinclayton/puppet-module-resolv.git'
 author 'justinclayton'
 license 'MIT'
